@@ -6,28 +6,32 @@ import images from "./images.json";
 
 const imgArray = images.slice();
 
-imgArray.sort(function(a, b) {
-  return 0.5 - Math.random();
-});
-
-const characterHTML = [];
-
-imgArray.forEach(element => {
-  characterHTML.push(
-    <ImageCard
-      name={element.name}
-      occupation={element.occupation}
-      location={element.location}
-      imgSrc={element.image}
-    />
-  );
-});
-
-const App = () => (
-  <Wrapper>
-    <Title>Clicky Game!</Title>
-    {characterHTML}
-  </Wrapper>
-);
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      score: 0,
+      highScore: 0,
+      imagesClicked: []
+    };
+  }
+  render() {
+    imgArray.sort(function(a, b) {
+      return 0.5 - Math.random();
+    });
+    const imageHTML = [];
+    imgArray.forEach(element => {
+      imageHTML.push(<ImageCard imgSrc={element.image} />);
+    });
+    return (
+      <Wrapper>
+        <Title>Clicky Game!</Title>
+        <Title>Score: {this.state.score}</Title>
+        <Title>High Score: {this.state.highScore}</Title>
+        {imageHTML}
+      </Wrapper>
+    );
+  }
+}
 
 export default App;
