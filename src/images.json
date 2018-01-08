@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "SpongeBob",
+    "image": "./images/1.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 2,
+    "name": "SpongeBob",
+    "image": "./images/2.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 3,
+    "name": "SpongeBob",
+    "image": "./images/3.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 4,
+    "name": "SpongeBob",
+    "image": "./images/4.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 5,
+    "name": "SpongeBob",
+    "image": "./images/5.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 6,
+    "name": "SpongeBob",
+    "image": "./images/6.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 7,
+    "name": "SpongeBob",
+    "image": "./images/7.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 8,
+    "name": "SpongeBob",
+    "image": "./images/8.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 9,
+    "name": "SpongeBob",
+    "image": "./images/9.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 10,
+    "name": "SpongeBob",
+    "image": "./images/10.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 11,
+    "name": "SpongeBob",
+    "image": "./images/11.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 12,
+    "name": "SpongeBob",
+    "image": "./images/12.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 13,
+    "name": "SpongeBob",
+    "image": "./images/13.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 14,
+    "name": "SpongeBob",
+    "image": "./images/14.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 15,
+    "name": "SpongeBob",
+    "image": "./images/15.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  },
+  {
+    "id": 16,
+    "name": "SpongeBob",
+    "image": "./images/16.jpg",
+    "occupation": "Fry Cook",
+    "location": "A Pineapple Under the Sea",
+    "clicked": 0
+  }
+]
