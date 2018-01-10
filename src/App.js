@@ -46,7 +46,7 @@ export default class App extends React.Component {
         <Title>High Score: {this.state.highScore}</Title>
         {this.state.imgArray.map(img => (
           <ImageCard
-            action={this.updateScore.bind(this, img.id)}
+            action={() => this.updateScore(img.id)}
             key={img.id}
             alt={img.id.toString()}
             imgSrc={img.image}
