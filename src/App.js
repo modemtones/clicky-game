@@ -4,34 +4,55 @@ import Title from "./components/Title";
 import ImageCard from "./components/ImageCard";
 import images from "./images.json";
 
-const imgArray = images.slice();
+// const imgArray = images.slice();
 
-class App extends React.Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       score: 0,
       highScore: 0,
+      imgArray: images.slice(),
       imagesClicked: []
     };
   }
+
+  updateScore = clickedImgID => {
+    console.log(clickedImgID);
+    if (this.state.imagesClicked.includes(clickedImgID)) {
+      if (this.state.score > this.state.highScore) {
+        this.setState({
+          highScore: this.state.score
+        });
+      }
+      this.setState({
+        score: 0,
+        imagesClicked: []
+      });
+    } else {
+      this.state.imagesClicked.push(clickedImgID);
+      this.setState({ score: this.state.score + 1 });
+    }
+    console.log(this.state.imagesClicked);
+  };
+
   render() {
-    imgArray.sort(function(a, b) {
-      return 0.5 - Math.random();
-    });
-    const imageHTML = [];
-    imgArray.forEach(element => {
-      imageHTML.push(<ImageCard imgSrc={element.image} />);
-    });
+    this.state.imgArray.sort((a, b) => 0.5 - Math.random());
+
     return (
       <Wrapper>
         <Title>Clicky Game!</Title>
         <Title>Score: {this.state.score}</Title>
         <Title>High Score: {this.state.highScore}</Title>
-        {imageHTML}
+        {this.state.imgArray.map(img => (
+          <ImageCard
+            action={this.updateScore.bind(this, img.id)}
+            key={img.id}
+            alt={img.id.toString()}
+            imgSrc={img.image}
+          />
+        ))}
       </Wrapper>
     );
   }
 }
-
-export default App;
